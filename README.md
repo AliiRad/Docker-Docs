@@ -18,43 +18,53 @@ show you all images you download from dockerHub
 		
 		
 show images that run now !
+
 		docker ps (prossesed)
 		
 
 show archive of all ran images !
+
 		docker ps -a 
 		
 	
 remove By Container Id
 PAY ATTENTION : if you want to delete some image , first you must delete (rm) containter that run that image , and second you can delete that image. 
+
 		docker rm [Containter ID] 
 		
   
 remove By IMAGE NAME
+
 		docker rmi [IMAGE NAME]
 		
 
 WARNING! This will remove all stopped containers. 
+
 		docker container prune  
 		
 
 Stop container that is running now
+
 		docker stop [Container ID] 
 		
 
 Start container By container ID
+
 		docker start [Container ID] 
 		
 		
 after running and Stoping hello-world delete from prossesed List OR(docker ps -a)
+
 		docker run --rm hello-world 
 		
 
 while busybox is running ( -it STDIN wait) and after that remove from (docker ps -a)
+
 		docker run --rm -it busybox 
 		
 
 description is in command.. very useful
+
 		docker exec [Container ID] [Some Command that image that run on this container support it] 
 
 
