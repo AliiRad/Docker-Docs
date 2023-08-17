@@ -2,56 +2,59 @@
 This is a Document of my experience about Learning Docker
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--->  run the image that you want 
+run the image that you want 
+
 		docker run [image-name] 
 		
 
---> pull image that you want to your images
+pull image that you want to your images
+
 		docker pull [image-name]
 		
 
--->            show you all images you download from dockerHub
+show you all images you download from dockerHub
+
 		docker images 
 		
 		
--->    show images that run now !
+show images that run now !
 		docker ps (prossesed)
 		
 
--->             show archive of all ran images !
+show archive of all ran images !
 		docker ps -a 
 		
 	
---> remove By Container Id
+remove By Container Id
 PAY ATTENTION : if you want to delete some image , first you must delete (rm) containter that run that image , and second you can delete that image. 
 		docker rm [Containter ID] 
 		
   
---> remove By IMAGE NAME
+remove By IMAGE NAME
 		docker rmi [IMAGE NAME]
 		
 
---> WARNING! This will remove all stopped containers. 
+WARNING! This will remove all stopped containers. 
 		docker container prune  
 		
 
---> Stop container that is running now
+Stop container that is running now
 		docker stop [Container ID] 
 		
 
---> Start container By container ID
+Start container By container ID
 		docker start [Container ID] 
 		
 		
---> after running and Stoping hello-world delete from prossesed List OR(docker ps -a)
+after running and Stoping hello-world delete from prossesed List OR(docker ps -a)
 		docker run --rm hello-world 
 		
 
---> while busybox is running ( -it STDIN wait) and after that remove from (docker ps -a)
+while busybox is running ( -it STDIN wait) and after that remove from (docker ps -a)
 		docker run --rm -it busybox 
 		
 
---> description is in command.. very useful
+description is in command.. very useful
 		docker exec [Container ID] [Some Command that image that run on this container support it] 
 
 
@@ -73,7 +76,8 @@ PAY ATTENTION : if you want to delete some image , first you must delete (rm) co
 -------------------------------------------------------------------------------------------
 <h1>How to set tag for images</h1>
 
---> see image that you want to update that tag (default:latest)						
+see image that you want to update that tag (default:latest)
+						
 1. 		docker images 
 
 
