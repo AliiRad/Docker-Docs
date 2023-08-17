@@ -57,8 +57,9 @@ docker exec [Container ID] [Some Command that image that run on this container s
 ----------------------------------------------------------------------------------------------
 
 Formatting images in Docker :
+			result - Is more Human Readable:
+
 			docker ps --format=" "\nDocker Details \nID:{{.ID}} \nNames: {{.Names}} \nSize: {{.Size}} "
-			result - More Human Readable:
 		    
 			Docker Details
 			ID:a1dcca6f78fc
