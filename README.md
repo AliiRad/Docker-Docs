@@ -56,10 +56,13 @@ docker exec [Container ID] [Some Command that image that run on this container s
 
 ----------------------------------------------------------------------------------------------
 
-Formatting images in Docker :
-			result - Is more Human Readable:
+<h1>Formatting images in Docker</h1>
+
+<h3><strong>What it Formatting</strong></h3>
+		<h4>Formatting is a method to show "docker ps" but with more human readable info</h4>
 
 			docker ps --format=" "\nDocker Details \nID:{{.ID}} \nNames: {{.Names}} \nSize: {{.Size}} "
+			result - More Human Readable:
 		    
 			Docker Details
 			ID:a1dcca6f78fc
@@ -68,6 +71,13 @@ Formatting images in Docker :
 			Status: Up 5 minutes
 			
 			
-			
+		
+<h1>Volums In Docker </h1>
 
+volume is a method to share data from started container and our System
 
+For example in this Command i authowired between NGINX directory on web and my tools/Docker folder in my system . 
+so if i save file in tools/Docker , it must save in Nginx directory Or if a file or somthing save in NGINX directory on web ,
+it must save in my directory that is tools/Docker
+
+		docker run --name website -v /some/content:/desktop/tools/docker:ro nginx:latest
