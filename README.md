@@ -135,10 +135,10 @@ In this example i want to set index.html file to my nginx cloud directory
 
 			docker run --name website -vC:\Users\Sazgar\Desktop\website:/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest
 			
-			<h4>Explain</h4> :
-			1. --name = set name to my container to make easier work for delete or stop it
-			2. -v Volumes = mount C:/Users\Sazgar\Desktop\website To Nginx cloud directory that is /user/share/nginx/html
-			3. :ro = read Only
-			4. -d = dettach after stop container (remove container after stop)
-			5. -p myPort:ImagePort(Container Port) = authowired Port to 8080 of my Web from 80 of NGINX Port OR (Container Port)
-			6. nginx:latest = say to docker that image i want to run is nginx (If i dont write latest tag , docker automatically use latest version on Image)
+<h4>Explain</h4> :
+1. --name = set name to my container to make easier work for delete or stop it
+2. -v Volumes = mount C:/Users\Sazgar\Desktop\website To Nginx cloud directory that is /user/share/nginx/html
+3. :ro = read Only
+4. -d = dettach after stop container (remove container after stop)
+5. -p myPort:ImagePort(Container Port) = authowired Port to 8080 of my Web from 80 of NGINX Port OR (Container Port)
+6. nginx:latest = say to docker that image i want to run is nginx (If i dont write latest tag , docker automatically use latest version on Image)
