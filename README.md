@@ -122,3 +122,21 @@ so if i save file in tools/Docker , it must save in Nginx directory Or if a file
 it must save in my directory that is tools/Docker
 
 		docker run --name website -v /some/content:/desktop/tools/docker:ro nginx:latest
+		
+
+<h1>Mounting in docker</h1>
+
+<h2>What is mounting</h2>
+<strong>mounting means that you wnat to set a folder of file from your system to Cloud Service that is running now</strong>
+
+<h3>Example of Mounting</h3>
+In this example i want to set index.html file to my nginx cloud directory
+			docker run --name website -vC:\Users\Sazgar\Desktop\website:/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest
+			
+			<h4>Explain</h4> :
+			1. --name = set name to my container to make easier work for delete or stop it
+			2. -v Volumes = mount C:/Users\Sazgar\Desktop\website To Nginx cloud directory that is /user/share/nginx/html
+			3. :ro = read Only
+			4. -d = dettach after stop container (remove container after stop)
+			5. -p myPort:ImagePort(Container Port) = authowired Port to 8080 of my Web from 80 of NGINX Port OR (Container Port)
+			6. nginx:latest = say to docker that image i want to run is nginx (If i dont write latest tag , docker automatically use latest version on Image)
