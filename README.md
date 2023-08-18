@@ -127,7 +127,7 @@ it must save in my directory that is tools/Docker
 <h1>Mounting in docker</h1>
 
 <h2>What is mounting</h2>
-<strong>mounting means that you wnat to set a folder of file from your system to Cloud Service that is running now</strong>
+<strong>mounting means that you want to set a folder or file from your system to Cloud Service directory that is running now</strong>
 
 <h3>Example of Mounting</h3>
 In this example i want to set index.html file to my nginx cloud directory
