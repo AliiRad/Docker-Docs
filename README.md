@@ -133,7 +133,7 @@ it must save in my directory that is tools/Docker
 In this example i want to set index.html file to my nginx cloud directory
 
 
-			docker run --name website -vC:\Users\Sazgar\Desktop\website:/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest
+		docker run --name website -vC:\Users\Sazgar\Desktop\website:/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest
 			
 <h4>Explain</h4> :
 1. --name = set name to my container to make easier work for delete or stop it <br>
