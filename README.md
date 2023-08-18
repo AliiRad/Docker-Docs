@@ -131,6 +131,8 @@ it must save in my directory that is tools/Docker
 
 <h3>Example of Mounting</h3>
 In this example i want to set index.html file to my nginx cloud directory
+
+
 			docker run --name website -vC:\Users\Sazgar\Desktop\website:/usr/share/nginx/html:ro -d -p 8080:80 nginx:latest
 			
 			<h4>Explain</h4> :
