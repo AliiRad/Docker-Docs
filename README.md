@@ -162,3 +162,28 @@ exec means that : Hey , give me a interactive bash | interactive means that we c
 </strong>		
 
 
+
+<h1>Share volumes betweens container(s) | --volumes-from</h1>
+
+<h2>We see how can we set volume between container and our system to mounting somthing. <br> But how about containers / how we can set Volumes betweeen containers?</h2>
+we can set volume between container with tools name --volumes-from
+<h3>Explain</h3>
+<strong>
+We have a nginx webServer container that is runnig now . this container name is website
+<br>
+now we want to start a brand new nginx webserver and set volume between website and website-copy(this container name)
+
+Important tip : set volume between container : !. what do you set directory to mount to what directory of your container ? <br> those directory will be set to this container
+</strong>
+
+<h3>Syntax</h3>
+
+		docker run --name website-copy --volumes-from [targeted-container-to-set-volume] -d -p [your-Port]:[container-port] [image-name]
+		
+<h2>Example</h2>
+
+		docker run --name website-copy --volumes-from website -d -p 8081:80 nginx
+		
+	1. we set volume between website-copy and website container-name
+	2. if we see 8081 port of localhost , it must have same index.html that we have in website(port=8080)
+
