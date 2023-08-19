@@ -158,7 +158,7 @@ In this example i want to set index.html file to my nginx cloud directory
 		docker exec -it website bash
 
 <strong>
-exec means that : Hey , give me a interactive bash | interactive means that we can have relation with bash 
+exec means that : Hey , give me a interactive bash | interactive means that we can have relation with bash | relation : have request and response with bash
 </strong>		
 
 
