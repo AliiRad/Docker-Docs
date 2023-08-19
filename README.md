@@ -146,7 +146,7 @@ In this example i want to set index.html file to my nginx cloud directory
 <h1>"exec" Command is very useFull</h1>
 
 <h3>
-<strong>exec is short form of executable. exec command provide use a bash or terminal of my image that we can controll and manage things on our runned Container and image</strong>
+<strong>exec is short form of executable. exec command provide us a bash or terminal of our image that we can controll and manage things on our runned Container and image</strong>
 </h3>
 
 <h2>Syntax</h2>
