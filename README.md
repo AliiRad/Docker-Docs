@@ -142,3 +142,23 @@ In this example i want to set index.html file to my nginx cloud directory
 4. -d = dettach after stop container (remove container after stop)<br>
 5. -p myPort:ImagePort(Container Port) = authowired Port to 8080 of my Web from 80 of NGINX Port OR (Container Port)<br>
 6. nginx:latest = say to docker that image i want to run is nginx (If i dont write latest tag , docker automatically use latest version on Image)<br>
+
+<h1>"exec" Command is very useFull</h1>
+
+<h3>
+<strong>exec is short form of executable. exec command provide use a bash or terminal of my image that we can controll and manage things on our runned Container and image</strong>
+</h3>
+
+<h2>Syntax</h2>
+
+		docker exec -it [container-name] bash
+		
+<h3>Example</h3>		
+
+		docker exec -it website bash
+
+<strong>
+exec means that : Hey , give me a interactive bash | interactive means that we can have relation with bash 
+</strong>		
+
+
