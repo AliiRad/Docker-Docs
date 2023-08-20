@@ -204,4 +204,5 @@ Docker file tip : with capital "D" and lowercase "f" Like : Dockerfile
 if your dockerFile is in example:C:/root/application/src , you need write the directory (that is C:/root/application/src)
 </strong>	
 
-
+<h2>.dockerignore</h2>
+<h3>with .dockerignore file we can ignore some file or folder to includ to image and run it every time <br> for example we dont need Dockerfile to add to our image and run it everyTime <br> so we push it in .dockerignore file (just write file or folder name in it)</h3>
