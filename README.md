@@ -187,3 +187,19 @@ Important tip : set volume between container : !. what do you set directory to m
 	1. we set volume between website-copy and website container-name
 	2. if we see 8081 port of localhost , it must have same index.html that we have in website(port=8080)
 
+
+<h1>How to build an image from dockerFile | "build" command</h1>
+
+<h2>Syntax</h2>
+
+	docker build --tag(or -t) [image-name]:[tag for your image] [directory that your docker file is in it]
+
+<h2>Example</h2>
+
+	docker build -t website:v1 .
+<strong>I write this command in my applciation directory.  "." means that docker file is in this directory
+<br>
+if your dockerFile is in example:C:/root/application/src , you need write the directory (that is C:/root/application/src)
+</strong>	
+
+
