@@ -194,6 +194,8 @@ Important tip : set volume between container : !. what do you set directory to m
 
 	docker build --tag(or -t) [image-name]:[tag for your image] [directory that your docker file is in it]
 
+Docker file tip : with capital "D" and lowercase "f" Like : Dockerfile
+
 <h2>Example</h2>
 
 	docker build -t website:v1 .
