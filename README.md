@@ -206,3 +206,32 @@ if your dockerFile is in example:C:/root/application/src , you need write the di
 
 <h2>.dockerignore</h2>
 <h3>with .dockerignore file we can ignore some file or folder to includ to image and run it every time <br> for example we dont need Dockerfile to add to our image and run it everyTime <br> so we push it in .dockerignore file (just write file or folder name in it)</h3>
+
+
+
+<h1>Simple Dockerfile for springBoot Apllication</h1>
+
+		FROM eclipse-temurin:17-jdk-focal
+
+		WORKDIR /app
+
+		COPY .mvn/ .mvn
+		COPY mvnw pom.xml ./
+		RUN ./mvnw dependency:go-offline
+
+		COPY src ./src
+
+		CMD ["./mvnw", "spring-boot:run"]
+
+<h3>
+<strong>
+FROM = Set Base Image 
+<br>
+WORKDIR = create directory and move to it
+<br>
+Copy = [my-directory] [image-directory]
+<br>
+CMD = run this command in cmd
+
+</strong>
+</h3>		
