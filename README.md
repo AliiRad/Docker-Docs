@@ -75,7 +75,7 @@ description is in command.. very useful
 
 1. first you must create new repository from dockerHub 
 
-2. 		docker tag [reposiory wanted to copy to your own address(username/repositoryName)] [address(more description in last code)]
+2. 		docker tag [reposiory wanted to copy to your own address(username/repositoryName)] [address(more description in previous code)]
 
 3. docker login --> login to your dockerHub to acceess to your repositories
 
